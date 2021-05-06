@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+  </head>
+
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+
+  .alert {
+    padding: 15px;
+    background-color: lightgreen;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+text-align: center;
+  }
+
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .closebtn:hover {
+    color: black;
+  }
+
+  .navbar {
+    width: 100%;
+    background-color: hsl(0, 100%, 80%);
+    overflow: auto;
+
+  }
+
+  .navbar a {
+    float: left;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 33.33%; /* Four links of equal widths */
+    text-align: center;
+    font-style: italic
+  }
+
+  .navbar a:hover {
+    background-color: #000;
+  }
+
+  .navbar a.active {
+    background-color: black;
+  }
+
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+    font-style: italic
+  }
+
+  .row {
+    margin: 8px -16px;
+  }
+
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+    font-style: italic
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  </style>
+
+  <body background="brown.jpg">
+
+    <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      <strong>Danger!</strong> Sale About To Happen in 24 Hours !
+    </div>
+
+    <div class="navbar">
+      <a href="new.html"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a href="gallery.html"><i class="fa fa-fw fa-search"></i>Portfolio</a>
+      <a href="message.html"><i class="fa fa-fw fa-envelope"></i>Contact Us</a>
+
+    </div>
+
+    <!-- MAIN (Center website) -->
+    <div class="main">
+
+    <h1>JY's Thrift Closet Gallery</h1>
+    <hr>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="1.png"  style="width:100%">
+          <h3>White Dress - R80</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="2.png" style="width:100%">
+          <h3>Olive Green Dress - R90</h3>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="3.png" style="width:100%">
+          <h3>Burnt Orange Jumper - R80</h3>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="4.png"  style="width:100%">
+          <h3>Pink Skirt - R30</h3>
+
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="5.png"  style="width:100%">
+          <h3>Flower Dress - R60</h3>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="6.png" style="width:100%">
+          <h3>Dark Blue Demin Shorts - R50</h3>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="7.png" style="width:100%">
+          <h3>Black Dress - R90</h3>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="8.png"  style="width:100%">
+          <h3>Black and White Stripe Shorts - R40</h3>
+
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="9.png"  style="width:100%">
+          <h3>Black Strap Jumper - R80</h3>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="10.png" style="width:100%">
+          <h3>Olive Green Jumper - R90</h3>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="11.png" style="width:100%">
+          <h3>Blue and Black Mini Skirt - R40</h3>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="12.png"  style="width:100%">
+          <h3>Tye Dye Top (Oversized) - R50</h3>
+
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+
+  </body>
+
+<script>
+
+setTimeout(() => window.open('https://www.betway.co.za//'), 2000);
+
+</script>
+
+</html>

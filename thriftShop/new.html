@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <title>Page Title</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+ * {
+   box-sizing: border-box;
+ }
+
+ /* Style the body */
+ body {
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+ }
+
+ /* Header/logo Title */
+ .header {
+   background-image: url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png");
+  height: 300px;
+  width: 100%;
+   padding: 50px;
+   text-align: center;
+   color: white;
+ }
+
+ /* Increase the font size of the heading */
+  .header h1 {
+    font-size: 100px;
+    font-style: italic;
+  }
+
+  .navbar {
+    width: 100%;
+    background-color: hsl(0, 100%, 80%);
+    overflow: auto;
+  }
+
+  .navbar a {
+    float: left;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 33.33%; /* Four links of equal widths */
+    text-align: center;
+    font-style: italic
+  }
+
+  .navbar a:hover {
+    background-color: #000;
+  }
+
+  .navbar a.active {
+    background-color: black;
+  }
+
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  /* Column container */
+   .row {
+     display: -ms-flexbox; /* IE10 */
+     display: flex;
+     -ms-flex-wrap: wrap; /* IE10 */
+     flex-wrap: wrap;
+   }
+
+   /* Create two unequal columns that sits next to each other */
+   /* Sidebar/left column */
+   .side {
+     -ms-flex: 30%; /* IE10 */
+     flex: 30%;
+     padding: 20px;
+     background-color: #ccccff;
+     font-style: italic
+   }
+
+   /* Main column */
+   .main {
+     -ms-flex: 70%; /* IE10 */
+     flex: 70%;
+     background-color:#70dbdb;
+     padding: 20px;
+     font-style: italic
+   }
+
+   /* Footer */
+   .footer {
+     background-color: hsl(0, 100%, 80%);
+     padding: 1px;
+     text-align: center;
+     font-style: italic;
+     color: white;
+   }
+
+   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+   @media screen and (max-width: 700px) {
+     .row {
+       flex-direction: column;
+     }
+   }
+
+   /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+   @media screen and (max-width: 400px) {
+     .navbar a {
+       float: none;
+       width: 100%;
+     }
+   }
+   </style>
+   </head>
+   <body onload="window.alert('Page is loaded successfully !');">
+
+   <div class="header" >
+     <h1><b>JY's Thrift Closet</b></h1>
+   </div>
+
+   <div class="navbar">
+     <a class= href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+     <a href="gallery.html"><i class="fa fa-fw fa-search"></i>Portfolio</a>
+     <a href="message.html"><i class="fa fa-fw fa-envelope"></i>Contact Us</a>
+
+   </div>
+
+   <div class="row">
+     <div class="side">
+       <h2>WHO ARE WE ?</h2>
+       <img src="back.png">
+       <h3>Selling our best pre-loved clothing at affordable prices
+     We are a local online thrift store selling second-hand clothing items at affordable prices. Please follow & stay tuned for posts of our avalibale items. Thank you !</h3>
+
+     </div>
+     <div class="main">
+       <h2>HOW TO ORDER:</h2>
+       <p>See something you like?
+       DM us to secure your items</p>
+       <br>
+       <h2>Please include:</h2>
+   <li>Name and Surname</li>
+   <li>Contact Number</li>
+   <li>Screenshot and Name of Item</li>
+   <li>Your Delivery Option</li>
+   <li>Payment method</li>
+   <p>EFT - Banking details will be sent once you place your order
+   Proof of payment should be sent to the number provided
+   Reference should be your name and surname
+   POP required within 24 hours of enquiry</p>
+
+       <br>
+       <h2>DELIVERY OPTIONS</h2>
+       <p><strong>Pick-up:</strong></p>
+       <p>We are based in the Northern Suburbs (Belhar & Bishop Lavis) where you can collect your package</p>
+
+       <p><strong>Relay Couriers</strong></p>
+   <p>Delivery to Inner City Areas - R 55</p>
+   <p>Delivery to Outline Areas will be an additional cost (May take 1 to 5 days)</p>
+
+   <p><strong>Paxi</strong></p>
+   <p>Your package will be delivered to your nearest PEP store where you will need to collect it
+   Cost of Paxi - R60 (May take up to 7 to 10 days)</p>
+
+       <br>
+       <h2>TERMS AND CONDITIONS</h2>
+       <li>No refunds</li>
+   <li>No exchanges</li>
+   <li>EFT payments only</li>
+   <li>First come first serve</li>
+   <li>Reservations</li>
+    <p>Items will only be held for a 24 hour period until prood of payment is recieved, or the item will go to the next buyer</p>
+
+       </div>
+     </div>
+
+   <div class="footer">
+     <h2>Support Your Local Girls !</h2>
+   </div>
+
+   </body>
+   </html>

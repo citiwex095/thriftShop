@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style >
+  .flexbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  font-style: italic
+  }
+
+
+  .flexbox-item {
+    width: 700px;
+    height: 650px;
+   margin: 25%;
+   padding: 0px;
+    border: 7px solid black;
+    background-color: white;
+    font-style: italic
+  }
+
+  h2 {
+    margin: 20px;
+    font-style: italic
+    font-family: inherit;
+    font-size: 30px;
+    color:solid black;
+  }
+
+  input[type=radio] {
+    margin: 10px 10px 0
+  }
+  label {
+    color: #4f4f4f;
+    text-shadow: 0 1px 0 #fff;
+    font-size: 14px;
+    font-weight: 700
+  }
+  input[type=submit] {
+    font-size: 16px;
+    background: yellow;
+    border: 1px solid white;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 0;
+    outline: none;
+    font-style: italic
+  }
+  input[type=submit]:hover {
+    background: orange;
+  }
+  {
+    border: 2px solid yellow;
+    border-radius: 10px;
+    font-family: raleway;
+    float: left;
+    font-style: italic
+  }
+  input[type=text] {
+    font-style: italic;
+    width: 94%;
+    height: 40px;
+    padding: 5px;
+    margin: 10px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    color: #4f4f4f;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  input[type=radio] {
+    margin: 10px 10px 0
+  }
+  label {
+    margin: 10px;
+    color: #464646;
+    text-shadow: 0 1px 0 #fff;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  </style>
+  <body background= "back.png" font-style="italic">
+
+      <div class="flexbox-container">
+          <div class="flexbox-item flexbox-item-1">
+            <h2>Order / Delivery Form</h2>
+            <form id="myForm" action="action.php" method="post" onsubmit="alert('You have succesfully submitted the form !')">
+              <input type="text" id="name" onkeyup="myFun()" placeholder="Full Name" onfocus="highlightInput(this)">
+              <input type="text" id="cnumber" placeholder="Contact Number" onfocus="highlightInput(this)">
+              <input type="text" id="email" placeholder="Email Adress" onfocus="highlightInput(this)">
+            <input type="text" id="item" onkeyup="myFunc()" placeholder="Name of Item" onfocus="highlightInput(this)">
+            <input type="text" id="doption" onkeyup="myFunct()" placeholder="Delivery Option" onfocus="highlightInput(this)">
+            <input type="text" id="method" onkeyup="myFunction()" placeholder="Payment Method" onfocus="highlightInput(this)">
+            <input type="submit" value="Submit">
+
+            </form>
+          </div>
+
+        </div>
+  </body>
+  <script>
+
+  function myFunction() {
+    var x = document.getElementById("method");
+    x.value = x.value.toUpperCase();
+  }
+
+  function myFunct() {
+    var x = document.getElementById("doption");
+    x.value = x.value.toUpperCase();
+  }
+
+  function myFun() {
+    var x = document.getElementById("name");
+    x.value = x.value.toUpperCase();
+  }
+
+  function myFunc() {
+    var x = document.getElementById("item");
+    x.value = x.value.toUpperCase();
+  }
+
+  function highlightInput(elm)
+  { elm.style.background = "lightgreen";}
+
+  </script>
+</html>
